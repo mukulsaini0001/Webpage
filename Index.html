@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class = "navbar-container">
+        <div class="navbar-logo">
+            <img alt="logo" src="./assets/Logo.png">
+        </div>
+        <div class="navbar">
+            <a href="./Home">Home</a>
+            <a href="./Solution">Solution</a>
+            <a href="./Approach">Approach</a>
+            <a href="./Resources">Resources</a>
+            <a href="./Company">Company</a>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="main-info">
+            <h1 class="main-heading">Build your<br>digital learing strategy with the<br>most trusted content <br>company in the business</h1>
+            <div class="main-btn">
+                <a href="#"><button type="button">Talk to an experts </button></a>
+             </div> 
+        </div>
+        <div class="main-images">
+            <img alt="images" src="./assets/men-png.png">
+        </div>
+    </div>
+    <div class="Container">
+        <h1 class="heading-container">Ansrsource: Accelerating better ways to learn</h1>
+        <p>The learning experts at ansrsource develop customized learning experiences <br>and content to make e-learning more effective, accessible, and affordable.<br>
+            ansrsource designs,develops, and delivers customized learning experiences <br>with speed, scale, and sophistication. We provide learning consulting, design<br>, and delivery services using our full-time team of hundreds of passionate <br>global experts. We serve millions of learners using all major learning 
+            <br>methodologies and technologies.Almost 20 years of experience working <br>with the most compelling ideas in digital education has resulted <br>in an unrivaled team,methodology, and process.</p>
+     <form class="form-container">
+        <div>   
+            <label for="name">Name</label>
+            <input placeholder="Enter your name" type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input placeholder="Enter your email" type="text" id="email" name="Email">
+        </div>
+        <div>
+            <label for="Contact">Contact number</label>
+            <input placeholder="Enter your Contact number" type="text" id="content" name="content">
+        </div>
+        <div>
+            <label for="Company name">Company name</label>
+            <input placeholder="Enter your Company name" type="text" id="Company name" name="Company name">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea  name="message" id="message"  rows="4" cols="50"></textarea>
+        </div>
+        <input class="btn-input" type="submit" value="Submit">
+      </form>
+    </div>
+    <footer class="footer-container">
+      <div class="list-container">
+        <div class="list-order1">
+             <h2 class="list-heading">Solutions</h2>
+              <ul>
+                <li><a href="#">Learning Strategy Consultation</a></li>
+                <li><a href="#">Course Design & Development</a></li>
+                <li><a href="#">Content Curation</a></li>
+                <li><a href="#">Content Digitization & Conversion</a></li>
+                <li><a href="#">Accessibility & Inclusion Solution</a></li>
+                <li><a href="#">Learning Evaluation & Assessment</a></li>
+            </ul>
+        </div>
+        <div class="list-order2">
+            <h2 class="list-heading">Who We Serve</h2>
+             <ul>
+               <li><a href="#">Enterprises & Businesses</a></li>
+               <li><a href="#">Education Institutions & Providers</a></li>
+               <li><a href="#">Non-profits & Associations</a></li>
+               <li><a href="#">Educational Publishers</a></li>
+           </ul>
+       </div>
+       <div class="list-order3">
+        <h2 class="list-heading">Solutions</h2>
+         <ul>
+           <li><a href="#">Learning Strategy Consultation</a></li>
+           <li><a href="#">Course Design & Development</a></li>
+           <li><a href="#">Content Curation</a></li>
+           <li><a href="#">Content Digitization & Conversion</a></li>
+           <li><a href="#">Accessibility & Inclusion Solution</a></li>
+           <li><a href="#">Learning Evaluation & Assessment</a></li>
+       </ul>
+   </div>
+ </div>
+<div class="upper-container">
+    <div class="icon-container">
+      <a target="_blank" href="https://www.linkedin.com/in/mukul-saini-04b553213/"><i class="fa-brands fa-linkedin"></i></a>
+      <a target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><i class="fa-solid fa-envelope"></i></a>
+      <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+      <a target="_blank" href="https://github.com/mukulsaini0001"><i class="fa-brands fa-github"></i></a>
+      <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+      <p>&copy;Copyright 2023. Made by Mukul Saini</p>
+    </div>
+</div>
+</footer>
+<script>
+   document.addEventListener("DOMContentLoaded", function () {
+        var talkToExpertsButton = document.querySelector('.main-btn button');
+        // Get references to the button and form elements
+        var form = document.querySelector('.form-container');
+
+        // Check if elements exist before trying to add event listeners
+        if (talkToExpertsButton && form) {
+
+            // Add a click event listener to the "Talk to an experts" button
+            talkToExpertsButton.addEventListener("click", function () {
+                // Display the form when the button is clicked
+                form.style.display = "block";
+            });
+
+            // Add a submit event listener to the form
+            form.addEventListener("submit", function (event) {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+                
+                // You can add additional logic here to handle the form submission
+
+                // For demonstration purposes, let's log the form data to the console
+                console.log("Form submitted!");
+                console.log("Name: " + form.name.value);
+                console.log("Email: " + form.email.value);
+                console.log("Contact number: " + form.content.value);
+                console.log("Company name: " + form['Company name'].value);
+                console.log("Message: " + form.message.value);
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
